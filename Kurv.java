@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Kurv {
     private ArrayList<String> varer;
 
-    public void Kurv() {
+    public Kurv() {
         varer = new ArrayList<>();
     }
 
