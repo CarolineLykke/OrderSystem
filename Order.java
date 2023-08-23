@@ -12,12 +12,12 @@ public class Order {
 
 
     public void  CustomerInfo() {
-        System.out.println("you need to write your info");
+        System.out.println("What is your information, when we are done with your coffee");
 
         System.out.println("Enter your name:");
         fuldnavn  = scan.nextLine();
-        System.out.println("Enter address");
-        adresse = scan.nextLine();
+        /*System.out.println("Enter address");
+        adresse = scan.nextLine();*/
         System.out.println("phoneNumber");
         tlfnummmer = scan.nextInt();
 

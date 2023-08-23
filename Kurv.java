@@ -1,54 +1,38 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Kurv {
-    private int price;
+    private List<Item> itemList;
 
-    private ArrayList<String> varer;
-    Scanner scan = new Scanner(System.in);
-
-
-
-    public int getPrice() {
-        return price;
+    public Kurv() {
+        itemList = new ArrayList<>();
     }
-   /* public void chooseproducts(){
-        price= 0;
-        System.out.println("what do you want have, caffelatte, Americano, vand ");
-        String output = scan.nextLine();
-        if(output.equalsIgnoreCase("caffelatte")){
-            price = 20;
+
+    public void addItem(Item item) {
+        itemList.add(item);
+    }
+
+    public void removeItem(Item item) {
+        itemList.remove(item);
+    }
+
+    public void showDrinks(){
+        //System.out.println("Drinks in your cart");
+        for (Item item : itemList) {
+            System.out.println(item);
         }
-        if(output.equalsIgnoreCase("Americano")){
-            price = 15;
-        }
-        if(output.equalsIgnoreCase("Vand")){
-            price = 10;
-        }
-        System.out.println("do you want to add or remove a drink");
 
     }
 
-    */
 
-    // Tilføj en vare til kurven
-    public void tilfojVare(String vare) {
+    public double getTotalPrice() {
+        double totalPrice = 0.0;
 
-        varer.add(vare);
-    }
-
-    //fjern en vare i kurven
-    public void fjernVare(String vare) {
-        varer.remove(vare);
-    }
-
-    // Metode til at udskrive varerne i kurven
-    public void visVarer() {
-        System.out.println("Varer i kurven:");
-        for (String vare : varer) {
-            System.out.println(vare);
+        for (Item item : itemList) {
+            totalPrice += item.getPrice();
         }
 
-
+        return totalPrice;
     }
 }
