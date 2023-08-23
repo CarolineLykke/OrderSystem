@@ -22,13 +22,13 @@ public class Order {
         tlfnummmer = scan.nextInt();
 
     }
-    public void  Ordernumber() {
+    public String  Ordernumber() {
 
         Random random = new Random();
         orderNumber = random.nextInt(10000);
         char character = '#';
 
-        System.out.println(fuldnavn+" your ordernumber is :" + character + orderNumber);
+        return fuldnavn+" your ordernumber is :" + character + orderNumber;
 
     }
     public void cancelOrder() {
