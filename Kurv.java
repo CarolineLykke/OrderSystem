@@ -12,7 +12,7 @@ public class Kurv {
     public int getPrice() {
         return price;
     }
-    public void chooseproducts(){
+   /* public void chooseproducts(){
         price= 0;
         System.out.println("what do you want have, caffelatte, Americano, vand ");
         String output = scan.nextLine();
@@ -28,6 +28,8 @@ public class Kurv {
         System.out.println("do you want to add or remove a drink");
 
     }
+
+    */
 
     // Tilføj en vare til kurven
     public void tilfojVare(String vare) {
