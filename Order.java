@@ -28,12 +28,7 @@ public class Order {
         orderNumber = random.nextInt(10000);
         char character = '#';
 
-
         System.out.println(fuldnavn+" your ordernumber is :" + character + orderNumber);
-
-
-
-
 
     }
     public void cancelOrder() {
@@ -48,11 +43,7 @@ public class Order {
         }else{
             System.out.println("order will proceed");
 
-
-
-
         }
-
 
     }
 

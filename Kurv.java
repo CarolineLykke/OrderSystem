@@ -25,6 +25,9 @@ public class Kurv {
 
     }
 
+    public List<Item> getItems(){
+        return itemList;
+    }
 
     public double getTotalPrice() {
         double totalPrice = 0.0;
