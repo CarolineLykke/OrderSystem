@@ -6,10 +6,9 @@ public class Main {
 
 
         // Tilføj varer til kurven
-        minKurv.tilfojVare("Vare 1");
-        minKurv.tilfojVare("Vare 2");
-        minKurv.tilfojVare("Vare 3");
-        minKurv.fjernVare("Vare 2");
+        minKurv.chooseproducts();
+
+
 
         // Vis indholdet af kurven
         minKurv.visVarer();
