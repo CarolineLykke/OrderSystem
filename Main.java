@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         Kurv cart = new Kurv();
-        Order order = new Order();
+        Oorder order = new Oorder();
 
 
         Item drikkelse1 = new Item("Caffelatte", 20.0);
@@ -21,6 +21,7 @@ public class Main {
         /*cart.removeItem(banana);
 
         System.out.println("Total price after removing Banana: " + cart.getTotalPrice());*/
+
 
         order.CustomerInfo();
         order.Ordernumber();
