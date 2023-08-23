@@ -4,6 +4,7 @@ public class Kurv {
     private ArrayList<String> varer;
 
     public Kurv() {
+
         varer = new ArrayList<>();
     }
 
@@ -13,7 +14,7 @@ public class Kurv {
     }
 
     //fjern en vare i kurven
-    public void fjernVare(String vare){
+    public void fjernVare(String vare) {
         varer.remove(vare);
     }
 
@@ -23,5 +24,7 @@ public class Kurv {
         for (String vare : varer) {
             System.out.println(vare);
         }
+
+
     }
 }
