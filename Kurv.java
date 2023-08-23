@@ -1,12 +1,11 @@
-package Kurv;
-
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Kurv {
     private List<Item> itemList;
 
-    public ShoppingCart() {
+    public Kurv() {
         itemList = new ArrayList<>();
     }
 
@@ -18,6 +17,15 @@ public class Kurv {
         itemList.remove(item);
     }
 
+    public void showDrinks(){
+        //System.out.println("Drinks in your cart");
+        for (Item item : itemList) {
+            System.out.println(item);
+        }
+
+    }
+
+
     public double getTotalPrice() {
         double totalPrice = 0.0;
 
@@ -28,4 +36,3 @@ public class Kurv {
         return totalPrice;
     }
 }
-
