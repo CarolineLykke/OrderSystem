@@ -15,12 +15,8 @@ public class Main {
 
         System.out.println("What is in tour bascket: ");
 
-     cart.showDrinks();
+        cart.showDrinks();
         System.out.println("Total price: " + cart.getTotalPrice());
-
-        /*cart.removeItem(banana);
-
-        System.out.println("Total price after removing Banana: " + cart.getTotalPrice());*/
 
         order.CustomerInfo();
         order.Ordrenummer();
