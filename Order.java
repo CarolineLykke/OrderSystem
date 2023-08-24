@@ -26,7 +26,7 @@ public class Order {
         // Generer et tilfældigt heltal mellem 1 og 9999 (inklusiv)
         int randomNum = rand.nextInt(9999) + 1;
 
-        // Formater tallet som en streng med præcis 5 cifre ved at tilføje førende nuller
+        // Formater tallet som en streng med præcis 5 cifre
         String formattedNum = String.format("%05d", randomNum);
         char character = '#';
 
