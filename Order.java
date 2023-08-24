@@ -6,7 +6,6 @@ public class Order {
     Scanner scan = new Scanner(System.in);
    Kurv kurv;
     private  String fuldnavn;
-    private  String adresse;
     private int tlfnummmer;
     private int orderNumber;
 
@@ -16,21 +15,9 @@ public class Order {
 
         System.out.println("Enter your name:");
         fuldnavn  = scan.nextLine();
-        /*System.out.println("Enter address");
-        adresse = scan.nextLine();*/
         System.out.println("phoneNumber");
         tlfnummmer = scan.nextInt();
-
     }
-    public void  Ordernumber() {
-
-        Random random = new Random();
-        orderNumber = random.nextInt(10000);
-        char character = '#';
-
-        System.out.println(fuldnavn+" your ordernumber is :" + character + orderNumber);
-    }
-
 
     public String Ordrenummer() {
         // Opret en tilfældig generator
