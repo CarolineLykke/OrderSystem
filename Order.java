@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Order {
 
     Scanner scan = new Scanner(System.in);
-   Kurv kurv;
+    Kurv kurv;
     private  String fuldnavn;
     private int tlfnummmer;
     private int orderNumber;
@@ -23,8 +23,8 @@ public class Order {
         // Opret en tilfældig generator
         Random rand = new Random();
 
-        // Generer et tilfældigt heltal mellem 1 og 99999 (inklusiv)
-        int randomNum = rand.nextInt(99999) + 1;
+        // Generer et tilfældigt heltal mellem 1 og 9999 (inklusiv)
+        int randomNum = rand.nextInt(9999) + 1;
 
         // Formater tallet som en streng med præcis 5 cifre ved at tilføje førende nuller
         String formattedNum = String.format("%05d", randomNum);

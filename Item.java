@@ -11,8 +11,7 @@ public class Item {
     public String toString() {
         return "" +
                 "Drink : " + name +
-                ", the price : " + price +
-                '}';
+                ", the price : " + price;
     }
 
     public String getName() {
