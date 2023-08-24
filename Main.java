@@ -23,7 +23,7 @@ public class Main {
         System.out.println("Total price after removing Banana: " + cart.getTotalPrice());*/
 
         order.CustomerInfo();
-        order.Ordernumber();
+        order.Ordrenummer();
         order.cancelOrder();
     }
 

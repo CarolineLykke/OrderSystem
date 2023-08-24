@@ -29,7 +29,23 @@ public class Order {
         char character = '#';
 
         System.out.println(fuldnavn+" your ordernumber is :" + character + orderNumber);
+    }
 
+
+    public String Ordrenummer() {
+        // Opret en tilfældig generator
+        Random rand = new Random();
+
+        // Generer et tilfældigt heltal mellem 1 og 99999 (inklusiv)
+        int randomNum = rand.nextInt(99999) + 1;
+
+        // Formater tallet som en streng med præcis 5 cifre ved at tilføje førende nuller
+        String formattedNum = String.format("%05d", randomNum);
+        char character = '#';
+
+        System.out.println(fuldnavn+" your ordernumber is :" + character + formattedNum);
+
+        return (fuldnavn+" your ordernumber is :" + character + formattedNum);
     }
     public void cancelOrder() {
         Scanner out = new Scanner(System.in);

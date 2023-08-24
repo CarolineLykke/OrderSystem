@@ -7,8 +7,7 @@ public class OorderTest {
     @Test
     public void Order() {
         Order ord = new Order();
-
-
-
+        ord.Ordrenummer();
+        assertEquals(ord.Ordrenummer().length(),5);
     }
 }
